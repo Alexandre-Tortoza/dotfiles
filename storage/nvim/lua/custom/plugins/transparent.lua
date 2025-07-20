@@ -1,6 +1,6 @@
 return {
   'xiyaowong/transparent.nvim',
   opts = {
-    extra_groups = { 'NormalFloat', 'Pmenu','BlinkCmpMenu','BlinkCmpMenuBorder' }
-  }
+    extra_groups = { 'NormalFloat', 'Pmenu', 'BlinkCmpMenu', 'BlinkCmpMenuBorder', 'DiagnosticSignError', 'NeoTreeWinSeparator', 'NeoTreeBorder' },
+  },
 }

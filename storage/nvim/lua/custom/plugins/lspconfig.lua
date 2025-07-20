@@ -1,5 +1,5 @@
-return{
-  
+return {
+
   {
     -- `lazydev` configures Lua LSP for your Neovim config, runtime and plugins
     -- used for completion, annotations and signatures of Neovim apis
@@ -12,7 +12,7 @@ return{
       },
     },
   },
-    {
+  {
     -- Main LSP Configuration
     'neovim/nvim-lspconfig',
     dependencies = {
@@ -21,7 +21,7 @@ return{
       -- NOTE: `opts = {}` is the same as calling `require('mason').setup({})`
       { 'mason-org/mason.nvim', opts = {
         ui = {
-          border = "rounded",
+          border = 'rounded',
         },
       } },
       'mason-org/mason-lspconfig.nvim',
@@ -222,7 +222,7 @@ return{
         --    https://github.com/pmizio/typescript-tools.nvim
         --
         -- But for many setups, the LSP (`ts_ls`) will work just fine
-        -- ts_ls = {},
+        -- ts_ls = {}, -- como estou usando o Plugon TS-tool.lua não pode puxar essa conf da lsp aqui
         --
 
         lua_ls = {
@@ -275,5 +275,6 @@ return{
         },
       }
     end,
-  }
+  },
 }
+
