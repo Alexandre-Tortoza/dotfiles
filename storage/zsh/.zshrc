@@ -12,6 +12,8 @@ alias config-start='~/dotfiles/start.sh'
 
 # === ALIASES NINJA === #
 
+alias g='git'
+
 # 📖 bat — melhor que cat
 alias cat='bat'                            # substitui cat por bat (com syntax highlight)
 alias b='bat --paging=never --style=plain'
