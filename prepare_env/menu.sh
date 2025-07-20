@@ -85,8 +85,9 @@ case "$escolha" in
         yay -S lua luarocks lua51
         yay -S julia
 
-cargo install tree-sitter-cli
-
+        cargo install tree-sitter-cli
+        gem install neovim
+        yay -S lazydocker
 
         composer global require laravel/installer
         # bash "$DOTFILES/checkhealth/basic_install.sh"

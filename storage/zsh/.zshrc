@@ -5,7 +5,9 @@ if [ "$TERM_PROGRAM" != "Apple_Terminal" ]; then
 fi
 eval "$(zoxide init zsh)"
 
+
 alias cls='clear'
+alias g='git'
 alias config-start='~/dotfiles/start.sh'
 
 # === ALIASES NINJA === #
