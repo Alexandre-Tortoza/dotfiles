@@ -82,6 +82,11 @@ case "$escolha" in
         # sudo npm install -g neovim
         # /bin/bash -c "$(curl -fsSL https://php.new/install/linux/8.4)"
         yay -S composer
+        yay -S lua luarocks lua51
+        yay -S julia
+
+cargo install tree-sitter-cli
+
 
         composer global require laravel/installer
         # bash "$DOTFILES/checkhealth/basic_install.sh"
