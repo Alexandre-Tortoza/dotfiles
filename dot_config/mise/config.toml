@@ -1,0 +1,17 @@
+[tools]
+bun = "latest"
+claude = "latest"
+codex = "latest"
+deno = "latest"
+gh = "latest"
+go = "latest"
+node = "latest"
+opencode = "latest"
+python = "latest"
+ruby = "latest"
+
+[settings]
+idiomatic_version_file_enable_tools = ["ruby"]
+
+[settings.ruby]
+compile = false
