@@ -1,0 +1,17 @@
+#!/bin/sh
+
+set -e
+
+{{ if .wisdom }}
+if [ ! -d "$HOME/.wisdom/.git" ]; then
+  git clone git@github.com:Alexandre-Tortoza/.wisdom.git "$HOME/.wisdom"
+fi
+{{ end }}
+
+{{ if .skills }}
+if [ ! -d "$HOME/.agents/skills/.git" ]; then
+  git init "$HOME/.agents/skills"
+  git -C "$HOME/.agents/skills" remote add origin git@github.com:Alexandre-Tortoza/skills.git
+  git -C "$HOME/.agents/skills" pull origin main
+fi
+{{ end }}
